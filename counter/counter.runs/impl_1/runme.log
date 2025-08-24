@@ -1,0 +1,186 @@
+
+*** Running vivado
+    with args -log top_tb.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source top_tb.tcl -notrace
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source top_tb.tcl -notrace
+Command: link_design -top top_tb -part xc7z020clg484-2
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Project 1-454] Reading design checkpoint 'd:/ADI_intern/Assignments_Fatma_Ali/FPGA_assignment1/counter/counter.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp' for cell 'U_TOP/U_PLL'
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Device 21-403] Loading part xc7z020clg484-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U_TOP/U_PLL/inst/clkin1_ibufg 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'U_TOP/U_PLL/clk_in1' is not directly connected to top level port. Synthesis is ignored for d:/ADI_intern/Assignments_Fatma_Ali/FPGA_assignment1/counter/counter.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0.edf but preserved for implementation. [d:/ADI_intern/Assignments_Fatma_Ali/FPGA_assignment1/counter/counter.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0.edf:281]
+Parsing XDC File [d:/ADI_intern/Assignments_Fatma_Ali/FPGA_assignment1/counter/counter.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'U_TOP/U_PLL/inst'
+Finished Parsing XDC File [d:/ADI_intern/Assignments_Fatma_Ali/FPGA_assignment1/counter/counter.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'U_TOP/U_PLL/inst'
+Parsing XDC File [d:/ADI_intern/Assignments_Fatma_Ali/FPGA_assignment1/counter/counter.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'U_TOP/U_PLL/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [d:/ADI_intern/Assignments_Fatma_Ali/FPGA_assignment1/counter/counter.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:57]
+get_clocks: Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 1170.164 ; gain = 483.016
+Finished Parsing XDC File [d:/ADI_intern/Assignments_Fatma_Ali/FPGA_assignment1/counter/counter.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'U_TOP/U_PLL/inst'
+Parsing XDC File [D:/ADI_intern/Assignments_Fatma_Ali/FPGA_assignment1/counter/counter.srcs/constrs_1/new/const.xdc]
+WARNING: [Vivado 12-584] No ports matched 'clk'. [D:/ADI_intern/Assignments_Fatma_Ali/FPGA_assignment1/counter/counter.srcs/constrs_1/new/const.xdc:2]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports clk]'. [D:/ADI_intern/Assignments_Fatma_Ali/FPGA_assignment1/counter/counter.srcs/constrs_1/new/const.xdc:2]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-661] port or pin 'clk' not found. [D:/ADI_intern/Assignments_Fatma_Ali/FPGA_assignment1/counter/counter.srcs/constrs_1/new/const.xdc:3]
+WARNING: [Vivado 12-661] port or pin 'U_pll/clk_out1' not found. [D:/ADI_intern/Assignments_Fatma_Ali/FPGA_assignment1/counter/counter.srcs/constrs_1/new/const.xdc:3]
+CRITICAL WARNING: [Vivado 12-4739] create_generated_clock:No valid object(s) found for '-source clk'. [D:/ADI_intern/Assignments_Fatma_Ali/FPGA_assignment1/counter/counter.srcs/constrs_1/new/const.xdc:3]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'reset'. [D:/ADI_intern/Assignments_Fatma_Ali/FPGA_assignment1/counter/counter.srcs/constrs_1/new/const.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/ADI_intern/Assignments_Fatma_Ali/FPGA_assignment1/counter/counter.srcs/constrs_1/new/const.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'reset'. [D:/ADI_intern/Assignments_Fatma_Ali/FPGA_assignment1/counter/counter.srcs/constrs_1/new/const.xdc:9]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/ADI_intern/Assignments_Fatma_Ali/FPGA_assignment1/counter/counter.srcs/constrs_1/new/const.xdc:9]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'reset'. [D:/ADI_intern/Assignments_Fatma_Ali/FPGA_assignment1/counter/counter.srcs/constrs_1/new/const.xdc:10]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/ADI_intern/Assignments_Fatma_Ali/FPGA_assignment1/counter/counter.srcs/constrs_1/new/const.xdc:10]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'count[0]'. [D:/ADI_intern/Assignments_Fatma_Ali/FPGA_assignment1/counter/counter.srcs/constrs_1/new/const.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/ADI_intern/Assignments_Fatma_Ali/FPGA_assignment1/counter/counter.srcs/constrs_1/new/const.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'count[1]'. [D:/ADI_intern/Assignments_Fatma_Ali/FPGA_assignment1/counter/counter.srcs/constrs_1/new/const.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/ADI_intern/Assignments_Fatma_Ali/FPGA_assignment1/counter/counter.srcs/constrs_1/new/const.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'count[2]'. [D:/ADI_intern/Assignments_Fatma_Ali/FPGA_assignment1/counter/counter.srcs/constrs_1/new/const.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/ADI_intern/Assignments_Fatma_Ali/FPGA_assignment1/counter/counter.srcs/constrs_1/new/const.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'count[*]'. [D:/ADI_intern/Assignments_Fatma_Ali/FPGA_assignment1/counter/counter.srcs/constrs_1/new/const.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/ADI_intern/Assignments_Fatma_Ali/FPGA_assignment1/counter/counter.srcs/constrs_1/new/const.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [D:/ADI_intern/Assignments_Fatma_Ali/FPGA_assignment1/counter/counter.srcs/constrs_1/new/const.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+9 Infos, 12 Warnings, 9 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:46 . Memory (MB): peak = 1170.164 ; gain = 862.473
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.218 . Memory (MB): peak = 1170.164 ; gain = 0.000
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 42094fdb
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1174.383 ; gain = 4.219
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 1 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 7428c1dc
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 1174.383 ; gain = 0.000
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 0 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 7428c1dc
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 1174.383 ; gain = 0.000
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: de237b7f
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.044 . Memory (MB): peak = 1174.383 ; gain = 0.000
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 3 cells
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: de237b7f
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.047 . Memory (MB): peak = 1174.383 ; gain = 0.000
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+Phase 5 Shift Register Optimization | Checksum: de237b7f
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.050 . Memory (MB): peak = 1174.383 ; gain = 0.000
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: de237b7f
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.052 . Memory (MB): peak = 1174.383 ; gain = 0.000
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1174.383 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: de237b7f
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.055 . Memory (MB): peak = 1174.383 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: de237b7f
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 1174.383 ; gain = 0.000
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: de237b7f
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1174.383 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+25 Infos, 12 Warnings, 9 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+INFO: [Timing 38-480] Writing timing data to binary archive.
+INFO: [Common 17-1381] The checkpoint 'D:/ADI_intern/Assignments_Fatma_Ali/FPGA_assignment1/counter/counter.runs/impl_1/top_tb_opt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file top_tb_drc_opted.rpt -pb top_tb_drc_opted.pb -rpx top_tb_drc_opted.rpx
+Command: report_drc -file top_tb_drc_opted.rpt -pb top_tb_drc_opted.pb -rpx top_tb_drc_opted.rpx
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file D:/ADI_intern/Assignments_Fatma_Ali/FPGA_assignment1/counter/counter.runs/impl_1/top_tb_drc_opted.rpt.
+report_drc completed successfully
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1182.758 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 00000000
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 1182.758 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 00000000
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.037 . Memory (MB): peak = 1182.758 ; gain = 0.000
+ERROR: [Place 30-494] The design is empty
+Resolution: Check if opt_design has removed all the leaf cells of your design.  Check whether you have instantiated and connected all of the top level ports.
+Ending Placer Task | Checksum: 00000000
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 1182.758 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+39 Infos, 12 Warnings, 9 Critical Warnings and 2 Errors encountered.
+place_design failed
+ERROR: [Common 17-69] Command failed: Placer could not place all instances
+INFO: [Common 17-206] Exiting Vivado at Tue Jul 22 01:40:17 2025...
